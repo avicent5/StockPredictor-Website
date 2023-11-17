@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <style>
+            * {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+        </style>
         <meta charset="utf-8">
         <meta name ="viewport" content="width=device-width, initial-scale=1">
         <title>background images
@@ -10,14 +28,25 @@
 
     </head>
    
-    <body background="stonks3.jpg">
-     
-        <p><center><H1>WELCOME TO THE STOCK PRICE PREDICTION WEBSITE!</H1></center></p>
-        <h1>Project: SP-23 Stock Price Prediction </h1>
+    <body>
+     <!--background="stonks3.jpg" (use between the body tag above)-->
+        <p><center><H1>WELCOME TO THE STOCK  PREDICTION WEBSITE!</H1></center></p>
         <h1>Team Members:</h1>
-        <h3>Anthony Vicente</h3>
-        <h3>Gustavo Ramos</h3>
-        <h3>Christian Robertson</h3>
+        <div class="row">
+            <div class="column">
+              <img src="AV.png" height="450" width="400" title="Team Member: Anthony Vicente">
+              <h3>Anthony Vicente </h3>
+            </div>
+            <div class="column">
+              <img src="GR.png" height="450" width="400" title="Team Member: Gustavo Ramos">
+              <h3>Gustavo Ramos</h3>
+            </div>
+            <div class="column">
+              <img src="cr.png" height="450" width="400" title="Team Lead: Christian Robertson">
+              <h3>Christian Ramos (Team Lead) </h3>
+            </div>
+          </div>
+            
         <br>
         <h1>Project Overview</h1>
         <p>
@@ -27,7 +56,6 @@
               The study then dives into the specifics of RNNs and LSTMs, highlighting their adeptness at handling sequential data and capturing long-term patterns.
                Furthermore, we integrate financial indicators like Relative Strength Index (RSI) and Exponential Moving Average (EMA) to enhance prediction accuracy.
         </p>
-        <br>
         <br>
         <h1>Semester & Course Information</h1>
         <h3>Fall 2023</h3>
